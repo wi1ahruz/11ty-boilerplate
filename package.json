@@ -2,8 +2,7 @@
   "name": "11ty-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wi1ahruz/11ty-boilerplate.git"
@@ -14,5 +13,8 @@
   "bugs": {
     "url": "https://github.com/wi1ahruz/11ty-boilerplate/issues"
   },
-  "homepage": "https://github.com/wi1ahruz/11ty-boilerplate#readme"
+  "homepage": "https://github.com/wi1ahruz/11ty-boilerplate#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
 }
