@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "start": "npm run sass & npm run serve",
     "format": "npm run format:css & npm run format:js",
     "lint": "npm run lint:css & npm run lint:js",
+    "serve": "npx @11ty/eleventy --serve",
     "sass": "sass --watch scss:dist/assets/css/",
     "build:css": "sass --no-source-map scss:dist/assets/css/",
     "lint:css": "stylelint 'scss/**/*.scss'",
