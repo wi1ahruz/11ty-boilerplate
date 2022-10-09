@@ -5,14 +5,15 @@
   "scripts": {
     "start": "npm run sass & npm run serve",
     "format": "npm run format:css & npm run format:js",
-    "lint": "npm run lint:css & npm run lint:js",
+    "lint": "npm run lint:css & npm run lint:js & npm run lint:html",
     "serve": "npx @11ty/eleventy --serve",
     "sass": "sass --watch scss:dist/assets/css/",
     "build:css": "sass --no-source-map scss:dist/assets/css/",
     "lint:css": "stylelint 'scss/**/*.scss'",
     "format:css": "prettier --write 'scss/**/*.scss' && stylelint --fix 'scss/**/*.scss'",
     "lint:js": "eslint 'assets/js/**/*.js'",
-    "format:js": "prettier --write 'assets/js/**/*.js' && eslint --fix 'assets/js/**/*.js'"
+    "format:js": "prettier --write 'assets/js/**/*.js' && eslint --fix 'assets/js/**/*.js'",
+    "lint:html": "htmlhint 'dist/**/*.html'"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.3.0",
     "eslint-plugin-promise": "^6.0.1",
+    "htmlhint": "^1.1.4",
     "prettier": "2.7.1",
     "sass": "^1.55.0",
     "stylelint": "^14.13.0",
