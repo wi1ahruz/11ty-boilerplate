@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="{{ meta.language }}">
+<html lang="{{ meta.lang }}">
 <head>
 <meta charset="utf-8">
 <title>{{ title or meta.siteName }}</title>
-<meta name="description" content="{{ description }}">
+<meta name="description" content="{{ description | truncate(80) }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:site_name" content="{{ meta.siteName }}">
+<meta property="og:title" content="{{ title or meta.siteName }}">
+<meta property="og:description" content="{{ description | truncate(80) }}">
+<meta name="twitter:card" content="{% if ogImage -%}summary_large_image{% else %}summary{% endif %}">
+{%- if ogImage %}
+<meta property="og:image" content="/assets/images{{ ogImage }}">
+{%- endif %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
