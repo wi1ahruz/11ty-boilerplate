@@ -1,7 +1,7 @@
 {
   "name": "11ty-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "A template for building websites using the Eleventy static site generator.",
   "scripts": {
     "start": "npm run sass & npm run serve",
     "format": "npm run format:css & npm run format:js",
