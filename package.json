@@ -29,20 +29,17 @@
   },
   "homepage": "https://github.com/wi1ahruz/11ty-boilerplate#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "eslint": "^8.25.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.3.0",
-    "eslint-plugin-promise": "^6.0.1",
+    "@11ty/eleventy": "^3.0.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
     "htmlhint": "^1.1.4",
-    "prettier": "2.7.1",
-    "rimraf": "^3.0.2",
-    "sass": "^1.55.0",
-    "stylelint": "^14.13.0",
-    "stylelint-config-prettier-scss": "^0.0.1",
-    "stylelint-config-recess-order": "^3.0.0",
-    "stylelint-config-standard-scss": "^5.0.0"
+    "neostandard": "^0.12.0",
+    "prettier": "3.4.2",
+    "rimraf": "^6.0.1",
+    "sass": "^1.83.4",
+    "stylelint": "^16.13.2",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-recess-order": "^5.1.1",
+    "stylelint-config-standard-scss": "^14.0.0"
   }
 }
